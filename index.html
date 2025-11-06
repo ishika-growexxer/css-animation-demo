@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive CSS Animation Lab - Explore modern CSS animations, transitions, keyframes, and transforms">
+    <title>Elements in Motion – Interactive CSS Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Elements in Motion</h1>
+            <p class="hero__subtitle">Interactive CSS Lab</p>
+            <p class="hero__description">
+                Explore the power of CSS animations, transitions, keyframes, and transforms. 
+                A comprehensive showcase of modern CSS animation techniques built with SCSS.
+            </p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-indicator__arrow"></div>
+        </div>
+    </section>
+
+    <!-- Transitions Showcase Section -->
+    <section class="section transitions-section" id="transitions">
+        <div class="container">
+            <h2 class="section__title">Transitions Showcase</h2>
+            <p class="section__subtitle">
+                Explore different transition timing functions and how they affect element animations.
+                Hover over each card to see the difference.
+            </p>
+            <div class="grid grid--4">
+                <div class="transition-demo">
+                    <div class="transition-demo__label">Ease (Default)</div>
+                    <div class="transition-demo__box transition-demo__box--ease">
+                        Hover Me
+                    </div>
+                    <p class="caption">Smooth start and end with acceleration in the middle</p>
+                </div>
+                <div class="transition-demo">
+                    <div class="transition-demo__label">Linear</div>
+                    <div class="transition-demo__box transition-demo__box--linear">
+                        Hover Me
+                    </div>
+                    <p class="caption">Constant speed throughout the animation</p>
+                </div>
+                <div class="transition-demo">
+                    <div class="transition-demo__label">Ease In Out</div>
+                    <div class="transition-demo__box transition-demo__box--ease-in-out">
+                        Hover Me
+                    </div>
+                    <p class="caption">Smooth acceleration and deceleration</p>
+                </div>
+                <div class="transition-demo">
+                    <div class="transition-demo__label">Cubic Bezier</div>
+                    <div class="transition-demo__box transition-demo__box--cubic-bezier">
+                        Hover Me
+                    </div>
+                    <p class="caption">Custom timing with bounce effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keyframes Playground Section -->
+    <section class="section keyframes-section" id="keyframes">
+        <div class="container">
+            <h2 class="section__title">Keyframes Playground</h2>
+            <p class="section__subtitle">
+                Watch keyframe animations in action. Each animation demonstrates different properties 
+                like iteration count, direction, and fill mode.
+            </p>
+            <div class="grid grid--3">
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Bounce</div>
+                    <div class="keyframe-demo__box keyframe-demo__box--bounce">
+                        Bounce
+                    </div>
+                    <p class="caption">Infinite bounce animation</p>
+                </div>
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Pulse</div>
+                    <div class="keyframe-demo__box keyframe-demo__box--pulse">
+                        Pulse
+                    </div>
+                    <p class="caption">Scaling pulse effect</p>
+                </div>
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Spin</div>
+                    <div class="keyframe-demo__box keyframe-demo__box--spin">
+                        Spin
+                    </div>
+                    <p class="caption">Continuous rotation animation</p>
+                </div>
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Shake</div>
+                    <div class="keyframe-demo__box keyframe-demo__box--shake">
+                        Shake
+                    </div>
+                    <p class="caption">Horizontal shake effect</p>
+                </div>
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Fade</div>
+                    <div class="keyframe-demo__box keyframe-demo__box--fade">
+                        Fade
+                    </div>
+                    <p class="caption">Fade in and out animation</p>
+                </div>
+                <div class="keyframe-demo">
+                    <div class="keyframe-demo__label">Rotate Scale</div>
+                    <div class="keyframe-demo__box" style="animation: rotateScale 2s ease-in-out infinite;">
+                        Combo
+                    </div>
+                    <p class="caption">Combined rotate and scale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations Gallery Section -->
+    <section class="section transforms-section" id="transforms">
+        <div class="container">
+            <h2 class="section__title">Transformations Gallery</h2>
+            <p class="section__subtitle">
+                Discover CSS transform properties. Hover over each shape to see different transformation effects.
+            </p>
+            <div class="grid grid--3">
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Scale</div>
+                    <div class="transform-demo__box transform-demo__box--scale">
+                        Scale
+                    </div>
+                    <p class="caption">Uniform scaling transformation</p>
+                </div>
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Rotate</div>
+                    <div class="transform-demo__box transform-demo__box--rotate">
+                        Rotate
+                    </div>
+                    <p class="caption">180-degree rotation on hover</p>
+                </div>
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Translate</div>
+                    <div class="transform-demo__box transform-demo__box--translate">
+                        Translate
+                    </div>
+                    <p class="caption">Position shift transformation</p>
+                </div>
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Skew</div>
+                    <div class="transform-demo__box transform-demo__box--skew">
+                        Skew
+                    </div>
+                    <p class="caption">Skewed distortion effect</p>
+                </div>
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Perspective</div>
+                    <div class="transform-demo__box transform-demo__box--perspective">
+                        3D Flip
+                    </div>
+                    <p class="caption">3D perspective rotation</p>
+                </div>
+                <div class="transform-demo">
+                    <div class="transform-demo__label">Combined</div>
+                    <div class="transform-demo__box transform-demo__box--combined">
+                        All
+                    </div>
+                    <p class="caption">Multiple transforms combined</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text Animation Section -->
+    <section class="section text-section" id="text-animations">
+        <div class="container">
+            <h2 class="section__title">Text Animation Section</h2>
+            <p class="section__subtitle">
+                Creative text animations using CSS. Explore gradient text, glowing effects, and wave animations.
+            </p>
+            <div class="grid grid--2">
+                <div class="text-animation">
+                    <div class="text-animation__label">Gradient Text Animation</div>
+                    <div class="text-animation__demo text-animation__demo--gradient">
+                        Animated Gradient
+                    </div>
+                    <p class="caption">Animated gradient background on text</p>
+                </div>
+                <div class="text-animation">
+                    <div class="text-animation__label">Glowing Text</div>
+                    <div class="text-animation__demo text-animation__demo--glow">
+                        Glowing Effect
+                    </div>
+                    <p class="caption">Pulsing glow animation</p>
+                </div>
+                <div class="text-animation">
+                    <div class="text-animation__label">Wave Animation</div>
+                    <div class="text-animation__demo text-animation__demo--wave">
+                        <span>W</span><span>a</span><span>v</span><span>e</span>
+                        <span> </span>
+                        <span>T</span><span>e</span><span>x</span><span>t</span>
+                    </div>
+                    <p class="caption">Individual letter wave animation</p>
+                </div>
+                <div class="text-animation">
+                    <div class="text-animation__label">Fade In Text</div>
+                    <div class="text-animation__demo" style="animation: fadeIn 2s ease-in-out infinite;">
+                        Fading Text
+                    </div>
+                    <p class="caption">Fade in and out text effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Animation Section -->
+    <section class="section combined-section" id="combined">
+        <div class="container">
+            <h2 class="section__title">Combined Animation Section</h2>
+            <p class="section__subtitle">
+                Advanced animations combining multiple CSS properties. See how different animations work together.
+            </p>
+            <div class="grid grid--3">
+                <div class="combined-demo">
+                    <div class="combined-demo__label">Floating Cube</div>
+                    <div class="combined-demo__cube"></div>
+                    <p class="caption">Floating animation with transform</p>
+                </div>
+                <div class="combined-demo">
+                    <div class="combined-demo__label">Morphing Blob</div>
+                    <div class="combined-demo__blob"></div>
+                    <p class="caption">Morphing border-radius animation</p>
+                </div>
+                <div class="combined-demo">
+                    <div class="combined-demo__label">Orbiting Elements</div>
+                    <div class="combined-demo__orbit">
+                        <div class="combined-demo__orbit-center"></div>
+                        <div class="combined-demo__orbit-element"></div>
+                    </div>
+                    <p class="caption">Circular orbit animation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Animation Section -->
+    <section class="section scroll-section" id="scroll-animations">
+        <div class="container">
+            <h2 class="section__title">Scroll / Load Animation Section</h2>
+            <p class="section__subtitle">
+                Elements that animate as you scroll. These animations are triggered when elements come into view.
+            </p>
+            <div class="grid grid--2">
+                <div class="scroll-animation scroll-animation--fade">
+                    <h3 class="scroll-animation__title">Fade In on Scroll</h3>
+                    <div class="scroll-animation__box">Fade</div>
+                    <p class="caption">This element fades in when scrolled into view</p>
+                </div>
+                <div class="scroll-animation scroll-animation--slide">
+                    <h3 class="scroll-animation__title">Slide Up Animation</h3>
+                    <div class="scroll-animation__box">Slide</div>
+                    <p class="caption">Slides up from bottom when visible</p>
+                </div>
+                <div class="scroll-animation scroll-animation--scale">
+                    <h3 class="scroll-animation__title">Scale In Effect</h3>
+                    <div class="scroll-animation__box">Scale</div>
+                    <p class="caption">Scales in from small to full size</p>
+                </div>
+                <div class="scroll-animation scroll-animation--elastic">
+                    <h3 class="scroll-animation__title">Elastic Entrance</h3>
+                    <div class="scroll-animation__box">Elastic</div>
+                    <p class="caption">Elastic bounce effect on appear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">
+                Built with <span class="footer__text--highlight">pure CSS & SCSS</span>
+            </p>
+            <p class="footer__text">
+                Elements in Motion – Interactive CSS Lab
+            </p>
+            <p class="footer__credit">
+                A comprehensive showcase of modern CSS animation techniques. 
+                Demonstrating transitions, keyframes, transforms, and advanced effects.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple scroll animation observer
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        // Stop observing once animated
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all scroll-animation elements
+            const scrollElements = document.querySelectorAll('.scroll-animation');
+            
+            scrollElements.forEach(el => {
+                // Check if element is already in viewport
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    // Small delay to ensure styles are applied
+                    setTimeout(() => {
+                        el.classList.add('animate');
+                    }, 100);
+                } else {
+                    // Observe for scroll-triggered animation
+                    observer.observe(el);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
